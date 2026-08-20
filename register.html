@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Mo Ai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo"><img src="assets/mo-logo.jpg" alt="Mo AI" style="height:60px;"></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="login-container">
+        <h2>Create Account</h2>
+        <form id="regForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        <div id="msg" style="color:red; margin-top:10px;"></div>
+    </div>
+</main>
+<script>
+document.getElementById('regForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const res = await fetch('/api/register', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({
+            username: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value
+        })
+    });
+    const data = await res.json();
+    const msg = document.getElementById('msg');
+    if(res.ok) {
+        msg.style.color = 'green';
+        msg.innerText = 'Account created! Go to Login.';
+    } else {
+        msg.innerText = data.message;
+    }
+});
+</script>
+</body>
+</html>
