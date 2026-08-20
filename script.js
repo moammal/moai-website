@@ -8,7 +8,7 @@ if (user) {
     loginBtn.style.display = 'none';
     userNameSpan.style.display = 'inline';
     
-    // نضيف زر تسجيل الخروج بجانب الاسم
+    // زر تسجيل الخروج بجانب الاسم
     userNameSpan.innerHTML = `👋 ${user} <a href="#" id="logout-btn" style="color: #f5e6a8; margin-left: 10px; font-weight: bold; text-decoration: none;">(Logout)</a>`;
     
     // إضافة وظيفة للزر عند الضغط

@@ -28,27 +28,7 @@
         <div id="msg" style="color:red; margin-top:10px;"></div>
     </div>
 </main>
-<script>
-document.getElementById('regForm').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const res = await fetch('/api/register', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-            username: document.getElementById('username').value,
-            email: document.getElementById('email').value,
-            password: document.getElementById('password').value
-        })
-    });
-    const data = await res.json();
-    const msg = document.getElementById('msg');
-    if(res.ok) {
-        msg.style.color = 'green';
-        msg.innerText = 'Account created! Go to Login.';
-    } else {
-        msg.innerText = data.message;
-    }
-});
-</script>
+
+<script src="script.js"></script>
 </body>
 </html>
