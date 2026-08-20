@@ -6,12 +6,23 @@
 </head>
 <body>
 <header>
-    <div class="logo"><img src="assets/mo-logo.jpg" alt="Mo AI" style="height:60px;"></div>
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/mo-logo.jpg" alt="Mo AI Logo" style="height: 50px; width: auto;">
+        </a>
+    </div>
+    
     <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        
+        <!-- هذا هو الجزء المسؤول عن Login/Logout -->
+        <div id="auth-area" style="display: flex; align-items: center; gap: 10px; padding-left: 15px;">
+            <a href="login.html" id="login-btn" style="background-color: white; color: #1e3a5f; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold;">Login</a>
+            <span id="user-name" style="color: white; font-weight: bold; display: none;"></span>
+        </div>
     </nav>
 </header>
 

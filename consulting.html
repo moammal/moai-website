@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulting - Mo Ai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-detail-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .service-detail-container img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        .service-detail-container h2 {
+            color: #1e3a5f;
+            font-size: 36px;
+        }
+        .service-detail-container p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-top: 15px;
+            text-align: left;
+        }
+        .service-detail-container h3 {
+            color: #1e3a5f;
+        }
+        .service-detail-container ul, .service-detail-container ol {
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #1e3a5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        .back-btn:hover { background-color: #14304a; }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/mo-logo.jpg" alt="Mo AI Logo" style="height: 50px; width: auto;">
+        </a>
+    </div>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        
+        <!-- هذا هو الجزء المسؤول عن Login/Logout -->
+        <div id="auth-area" style="display: flex; align-items: center; gap: 10px; padding-left: 15px;">
+            <a href="login.html" id="login-btn" style="background-color: white; color: #1e3a5f; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold;">Login</a>
+            <span id="user-name" style="color: white; font-weight: bold; display: none;"></span>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <div class="service-detail-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/2727/2727386.png" alt="Consulting" style="width: 120px; margin-bottom: 20px;">
+            <h2 style="color: #1e3a5f; font-size: 36px; margin-bottom: 10px;">Consulting</h2>
+            <p style="font-size: 20px; color: #1e3a5f; font-weight: bold; margin-bottom: 20px;">Turn your idea or problem into a clear action plan</p>
+
+            <div style="text-align: left; font-size: 18px; line-height: 1.8; color: #555;">
+                <p>Not every project needs more code. Sometimes the biggest challenge is knowing <strong>what to build, which technology to use, or what to improve first</strong>.</p>
+                
+                <p>Our Consulting service helps you make better decisions before investing time and money into development. We analyze your idea, project, existing website, or technical challenge and provide practical recommendations based on your goals.</p>
+
+                <h3 style="color: #1e3a5f; margin-top: 25px;">What can we help you with?</h3>
+                <ul>
+                    <li>Project and idea evaluation</li>
+                    <li>Website or application reviews</li>
+                    <li>Technology recommendations</li>
+                    <li>Technical planning</li>
+                    <li>Project structure and roadmap</li>
+                    <li>UX/UI feedback</li>
+                    <li>Feature and functionality planning</li>
+                    <li>Identifying technical problems</li>
+                    <li>Improving existing digital products</li>
+                    <li>Recommendations for future development</li>
+                </ul>
+
+                <h3 style="color: #1e3a5f; margin-top: 25px;">How does it work?</h3>
+                <ol>
+                    <li><strong>Understand:</strong> We discuss your project, goals, current situation, and the problem you are trying to solve.</li>
+                    <li><strong>Analyze:</strong> We review the relevant parts of your website, product, idea, or technical requirements.</li>
+                    <li><strong>Recommend:</strong> We identify possible solutions and explain the advantages, disadvantages, and priorities.</li>
+                    <li><strong>Plan:</strong> We help turn the recommendations into a practical roadmap with clear next steps.</li>
+                </ol>
+
+                <h3 style="color: #1e3a5f; margin-top: 25px;">When do you need Consulting?</h3>
+                <ul>
+                    <li>You have an idea but don't know where to start.</li>
+                    <li>You already have a website but don't know what needs improvement.</li>
+                    <li>You are unsure which technology or solution is right for your project.</li>
+                    <li>You want to build a digital product and need help planning it.</li>
+                    <li>You have a project but need an expert opinion before development.</li>
+                    <li>You want to avoid spending money on unnecessary features or technologies.</li>
+                </ul>
+
+                <h3 style="color: #1e3a5f; margin-top: 25px;">What do you get?</h3>
+                <p>Instead of leaving the consultation with more questions, you should leave with a clearer understanding of: <strong>What is the problem? What should be done? What should be done first? Which solution makes the most sense? What are the next steps?</strong></p>
+                <p><strong>In simple words:</strong> Consulting helps you make the right decisions <strong>before you spend time and money building the wrong thing.</strong></p>
+            </div>
+            <a href="services.html" class="back-btn">⬅ Back to Services</a>
+        </div>
+    </main>
+
+    <footer><p>&copy; 2026 Mo Ai. All rights reserved.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
