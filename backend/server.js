@@ -24,6 +24,15 @@ const UserSchema = new mongoose.Schema({
 });
 const User = mongoose.model('User', UserSchema);
 
+// 🟢 نموذج الرسائل
+const MessageSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    message: String,
+    date: Date
+});
+const Message = mongoose.model('Message', MessageSchema);
+
 // مسار التسجيل
 app.post('/api/register', async (req, res) => {
     const { username, email, password } = req.body;
@@ -50,6 +59,22 @@ app.post('/api/login', async (req, res) => {
 
 // خدمة ملفات الموقع
 app.use(express.static(path.join(__dirname, '..')));
+
+// 🟢 مسار إرسال رسالة تواصل (مع حفظها في قاعدة البيانات)
+app.post('/api/contact', async (req, res) => {
+    const { name, email, message } = req.body;
+
+    // 🔴 الكود الذي يحفظ الرسالة في قاعدة البيانات
+    const newMessage = new Message({
+        name,
+        email,
+        message,
+        date: new Date()
+    });
+    await newMessage.save(); // يحفظ الرسالة للأبد
+
+    res.json({ message: "Message sent successfully!" });
+});
 
 app.listen(port, () => {
     console.log(`🚀 موقعك يعمل على: http://localhost:${port}`);
