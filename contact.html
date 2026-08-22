@@ -6,7 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body style="background: linear-gradient(rgba(15, 32, 39, 0.1), rgba(15, 32, 39, 0.1)), url('assets/earth-bg.jpg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat; color: white; min-height: 100vh; display: flex; flex-direction: column;">
 
 <header>
     <div class="logo">
@@ -29,24 +30,33 @@
     </nav>
 </header>
 
-    <main>
-        <h2>Contact Us</h2>
-        <p>📧 Email: MO.com</p>
-        <p>📞 Phone: +123 456 7890</p>
-        <p>📍 Address: 6 7 Street, Vice City</p>
-    </main>
+<main style="flex: 1; text-align: center; padding: 60px 20px;">
+    <h2 style="color: white; font-size: 45px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); margin-bottom: 30px;">Contact Us</h2>
+    
+    <p style="color: #f5e6a8; font-size: 22px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); margin-bottom: 15px;">📧 Email: MO.com</p>
+    <p style="color: #f5e6a8; font-size: 22px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); margin-bottom: 15px;">📞 Phone: +123 456 7890</p>
+    <p style="color: #f5e6a8; font-size: 22px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); margin-bottom: 30px;">📍 Address: 6 7 Street, Miami, Florida</p>
+</main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Mo Ai. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
+<footer style="background: linear-gradient(rgba(15, 32, 39, 0.9), rgba(15, 32, 39, 1)); color: white; text-align: center; padding: 20px 0; margin-top: auto;">
+    <div class="footer-content" style="max-width: 600px; margin: 0 auto;">
+        <p style="font-size: 14px; color: #a0a0a0; margin-top: 20px;">&copy; 2026 Mo Ai. All rights reserved.</p>
+        <div class="social-links" style="display: flex; gap: 15px; justify-content: center; margin-top: 10px;">
+            <a href="https://www.facebook.com" target="_blank" style="background-color: white; color: #0f2027; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;">
+                <i class="fab fa-facebook-f" style="font-size: 20px;"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" style="background-color: white; color: #0f2027; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;">
+                <i class="fab fa-instagram" style="font-size: 20px;"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" style="background-color: white; color: #0f2027; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;">
+                <i class="fab fa-linkedin-in" style="font-size: 20px;"></i>
+            </a>
+            <a href="https://www.x.com" target="_blank" style="background-color: white; color: #0f2027; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;">
+                <i class="fab fa-x-twitter" style="font-size: 20px;"></i>
+            </a>
         </div>
-    </footer>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>

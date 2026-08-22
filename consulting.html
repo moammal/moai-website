@@ -9,7 +9,6 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 40px;
-            background: white;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
@@ -53,7 +52,7 @@
         .back-btn:hover { background-color: #14304a; }
     </style>
 </head>
-<body>
+<body style="background: linear-gradient(rgba(15, 32, 39, 0.1), rgba(15, 32, 39, 0.1)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white; min-height: 100vh; display: flex; flex-direction: column;">
 <header>
     <div class="logo">
         <a href="index.html">
@@ -75,56 +74,67 @@
     </nav>
 </header>
 
-    <main>
-        <div class="service-detail-container">
+<main>
+    <!-- هذه الطبقة هي الصندوق الأبيض الشفاف الذي يغطي الخلفية -->
+    <div style="background: rgba(255,255,255,0.9); border-radius: 20px; padding: 40px; max-width: 800px; margin: 50px auto; text-align: left; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+        
+        <!-- العنوان والأيقونة -->
+        <div style="text-align: center; margin-bottom: 20px;">
             <img src="https://cdn-icons-png.flaticon.com/512/2727/2727386.png" alt="Consulting" style="width: 120px; margin-bottom: 20px;">
-            <h2 style="color: #1e3a5f; font-size: 36px; margin-bottom: 10px;">Consulting</h2>
-            <p style="font-size: 20px; color: #1e3a5f; font-weight: bold; margin-bottom: 20px;">Turn your idea or problem into a clear action plan</p>
-
-            <div style="text-align: left; font-size: 18px; line-height: 1.8; color: #555;">
-                <p>Not every project needs more code. Sometimes the biggest challenge is knowing <strong>what to build, which technology to use, or what to improve first</strong>.</p>
-                
-                <p>Our Consulting service helps you make better decisions before investing time and money into development. We analyze your idea, project, existing website, or technical challenge and provide practical recommendations based on your goals.</p>
-
-                <h3 style="color: #1e3a5f; margin-top: 25px;">What can we help you with?</h3>
-                <ul>
-                    <li>Project and idea evaluation</li>
-                    <li>Website or application reviews</li>
-                    <li>Technology recommendations</li>
-                    <li>Technical planning</li>
-                    <li>Project structure and roadmap</li>
-                    <li>UX/UI feedback</li>
-                    <li>Feature and functionality planning</li>
-                    <li>Identifying technical problems</li>
-                    <li>Improving existing digital products</li>
-                    <li>Recommendations for future development</li>
-                </ul>
-
-                <h3 style="color: #1e3a5f; margin-top: 25px;">How does it work?</h3>
-                <ol>
-                    <li><strong>Understand:</strong> We discuss your project, goals, current situation, and the problem you are trying to solve.</li>
-                    <li><strong>Analyze:</strong> We review the relevant parts of your website, product, idea, or technical requirements.</li>
-                    <li><strong>Recommend:</strong> We identify possible solutions and explain the advantages, disadvantages, and priorities.</li>
-                    <li><strong>Plan:</strong> We help turn the recommendations into a practical roadmap with clear next steps.</li>
-                </ol>
-
-                <h3 style="color: #1e3a5f; margin-top: 25px;">When do you need Consulting?</h3>
-                <ul>
-                    <li>You have an idea but don't know where to start.</li>
-                    <li>You already have a website but don't know what needs improvement.</li>
-                    <li>You are unsure which technology or solution is right for your project.</li>
-                    <li>You want to build a digital product and need help planning it.</li>
-                    <li>You have a project but need an expert opinion before development.</li>
-                    <li>You want to avoid spending money on unnecessary features or technologies.</li>
-                </ul>
-
-                <h3 style="color: #1e3a5f; margin-top: 25px;">What do you get?</h3>
-                <p>Instead of leaving the consultation with more questions, you should leave with a clearer understanding of: <strong>What is the problem? What should be done? What should be done first? Which solution makes the most sense? What are the next steps?</strong></p>
-                <p><strong>In simple words:</strong> Consulting helps you make the right decisions <strong>before you spend time and money building the wrong thing.</strong></p>
-            </div>
-            <a href="services.html" class="back-btn">⬅ Back to Services</a>
+            <h2 style="color: #1e3a5f; font-size: 36px;">Consulting</h2>
+            <p style="font-size: 20px; color: #1e3a5f; font-weight: bold;">Turn your idea or problem into a clear action plan</p>
         </div>
-    </main>
+
+        <!-- النصوص الطويلة مرتبة -->
+        <div style="text-align: left; font-size: 18px; line-height: 1.8; color: #555;">
+            <p>Not every project needs more code. Sometimes the biggest challenge is knowing <strong>what to build, which technology to use, or what to improve first</strong>.</p>
+            
+            <p>Our Consulting service helps you make better decisions before investing time and money into development. We analyze your idea, project, existing website, or technical challenge and provide practical recommendations based on your goals.</p>
+
+            <h3 style="color: #1e3a5f; margin-top: 25px;">What can we help you with?</h3>
+            <ul>
+                <li>Project and idea evaluation</li>
+                <li>Website or application reviews</li>
+                <li>Technology recommendations</li>
+                <li>Technical planning</li>
+                <li>Project structure and roadmap</li>
+                <li>UX/UI feedback</li>
+                <li>Feature and functionality planning</li>
+                <li>Identifying technical problems</li>
+                <li>Improving existing digital products</li>
+                <li>Recommendations for future development</li>
+            </ul>
+
+            <h3 style="color: #1e3a5f; margin-top: 25px;">How does it work?</h3>
+            <ol>
+                <li><strong>Understand:</strong> We discuss your project, goals, current situation, and the problem you are trying to solve.</li>
+                <li><strong>Analyze:</strong> We review the relevant parts of your website, product, idea, or technical requirements.</li>
+                <li><strong>Recommend:</strong> We identify possible solutions and explain the advantages, disadvantages, and priorities.</li>
+                <li><strong>Plan:</strong> We help turn the recommendations into a practical roadmap with clear next steps.</li>
+            </ol>
+
+            <h3 style="color: #1e3a5f; margin-top: 25px;">When do you need Consulting?</h3>
+            <ul>
+                <li>You have an idea but don't know where to start.</li>
+                <li>You already have a website but don't know what needs improvement.</li>
+                <li>You are unsure which technology or solution is right for your project.</li>
+                <li>You want to build a digital product and need help planning it.</li>
+                <li>You have a project but need an expert opinion before development.</li>
+                <li>You want to avoid spending money on unnecessary features or technologies.</li>
+            </ul>
+
+            <h3 style="color: #1e3a5f; margin-top: 25px;">What do you get?</h3>
+            <p>Instead of leaving the consultation with more questions, you should leave with a clearer understanding of: <strong>What is the problem? What should be done? What should be done first? Which solution makes the most sense? What are the next steps?</strong></p>
+            <p><strong>In simple words:</strong> Consulting helps you make the right decisions <strong>before you spend time and money building the wrong thing.</strong></p>
+        </div>
+
+        <!-- الأزرار -->
+        <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center;">
+            <a href="services.html" class="back-btn">⬅ Back</a>
+            <a href="contact.html" class="back-btn">Let's Go 🚀</a>
+        </div>
+    </div>
+</main>
 
     <footer><p>&copy; 2026 Mo Ai. All rights reserved.</p></footer>
     <script src="script.js"></script>

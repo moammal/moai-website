@@ -9,7 +9,6 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 40px;
-            background: white;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
@@ -42,7 +41,7 @@
         .back-btn:hover { background-color: #14304a; }
     </style>
 </head>
-<body>
+<body style="background: linear-gradient(rgba(15, 32, 39, 0.1), rgba(15, 32, 39, 0.1)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white; min-height: 100vh; display: flex; flex-direction: column;">
  <header>
     <div class="logo">
         <a href="index.html">
@@ -64,8 +63,10 @@
     </nav>
 </header>
 
-    <main>
-        <div class="service-detail-container">
+<main>
+    <div class="service-detail-container">
+        <!-- الصندوق الأبيض الشفاف الذي يحتوي على النص -->
+        <div style="background: rgba(255,255,255,0.95); border-radius: 20px; padding: 40px; max-width: 800px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
             <!-- صورة الخدمة -->
             <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png" alt="Web Development" style="width: 120px; margin-bottom: 20px;">
             
@@ -105,9 +106,13 @@
             </div>
 
             <!-- زر العودة -->
-            <a href="services.html" class="back-btn">⬅ Back to Services</a>
+            <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center;">
+                <a href="services.html" class="back-btn">⬅ Back</a>
+                <a href="contact.html" class="back-btn">Let's Go 🚀</a>
+            </div>
         </div>
-    </main>
+    </div>
+</main>
 
     <footer><p>&copy; 2026 Mo Ai. All rights reserved.</p></footer>
     <script src="script.js"></script>

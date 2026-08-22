@@ -558,3 +558,212 @@ footer {
     border-radius: 8px;
     background: rgba(0,0,0,0.03);
 }
+
+.review-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+    color: #00ff99; /* لون أخضر نيون مميز */
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+    background-color: #00ff99; /* لون أخضر */
+    color: #0f2027;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 255, 153, 0.4);
+}
+
+.hero-btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+.hero-btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+/* ===== قسم التحفيز المتحرك (Slider) ===== */
+.motivation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* تأثير الفوتر الاحترافي */
+.social-links a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* شريط الدفع المندمج مع الخلفية */
+.payment-logos {
+    background: transparent !important; /* إزالة اللون الأبيض تماماً */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* خط خفيف جداً يفصل القسم */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 10px; /* مسافة بسيطة عن الفوتر فوقه */
+}
+
+.payment-logos span {
+    color: #a0a0a0; /* لون نص رمادي هادئ */
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.payment-logos i {
+    font-size: 35px; /* تصغير الأيقونات قليلاً لتبدو أنيقة */
+    color: #a0a0a0; /* لون رمادي فاتح بدلاً من الألوان القوية */
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.payment-logos i:hover {
+    transform: translateY(-5px);
+    color: white; /* تتحول للأبيض عند المرور فقط */
+}
+
+/* ===== شريط الأخبار المتحرك ===== */
+.news-ticker {
+    display: flex;
+    align-items: center;
+    background-color: #d4eaf7;
+    border-top: 1px solid #b0d4e8;
+    border-bottom: 1px solid #b0d4e8;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ticker-label {
+    background-color: #1e3a5f;
+    color: #f5e6a8;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.ticker-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.ticker-items {
+    display: flex;
+    gap: 50px;
+    white-space: nowrap;
+    animation: scrollTicker 20s linear infinite;
+}
+
+.ticker-items span {
+    font-size: 16px;
+    color: #1e3a5f;
+    font-weight: 500;
+}
+
+@keyframes scrollTicker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+/* توقف الحركة عند المرور */
+.ticker-wrapper:hover .ticker-items {
+    animation-play-state: paused;
+}
+
+/* ===== صفحة الخدمة التفصيلية ===== */
+.service-detail-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 30px;
+}
+
+.service-detail-container > div {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}

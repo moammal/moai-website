@@ -22,3 +22,18 @@ if (user) {
     loginBtn.style.display = 'inline-block';
     userNameSpan.style.display = 'none';
 }
+
+// تبديل البطاقات تلقائياً كل 4 ثوانٍ (Slider)
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+setInterval(() => {
+    // إخفاء البطاقة الحالية
+    slides[currentSlide].classList.remove('active');
+    
+    // الانتقال إلى البطاقة التالية
+    currentSlide = (currentSlide + 1) % slides.length;
+    
+    // إظهار البطاقة الجديدة
+    slides[currentSlide].classList.add('active');
+}, 4000); // 4 ثوانٍ
